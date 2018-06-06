@@ -11,21 +11,21 @@
 		E204597420C63ED000998EAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E204597320C63ED000998EAC /* Assets.xcassets */; };
 		E204597720C63ED000998EAC /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = E204597520C63ED000998EAC /* MainMenu.xib */; };
 		E204597A20C63ED000998EAC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E204597920C63ED000998EAC /* main.m */; };
-		E204598820C6608600998EAC /* SMJobBlessHelper-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E204598520C6608500998EAC /* SMJobBlessHelper-Info.plist */; };
-		E204598A20C6608600998EAC /* SMJobBlessHelper-Launchd.plist in Resources */ = {isa = PBXBuildFile; fileRef = E204598720C6608600998EAC /* SMJobBlessHelper-Launchd.plist */; };
 		E204598C20C6609E00998EAC /* PPTP in Resources */ = {isa = PBXBuildFile; fileRef = E204598B20C6609E00998EAC /* PPTP */; };
 		E204598F20C6633D00998EAC /* PPTP.m in Sources */ = {isa = PBXBuildFile; fileRef = E204598E20C6633D00998EAC /* PPTP.m */; };
-		E20459C120C667F400998EAC /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = E20459C020C667F400998EAC /* main.c */; };
-		E20459C720C668C600998EAC /* com.apple.bsd.SMJobBlessHelper in CopyFiles */ = {isa = PBXBuildFile; fileRef = E20459BE20C667F400998EAC /* com.apple.bsd.SMJobBlessHelper */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		E2DF8A2220C76DDB00C8D3DB /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = E2DF8A2120C76DDB00C8D3DB /* main.c */; };
+		E2DF8A2C20C770F200C8D3DB /* ZWHelper-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E2DF8A2A20C770F200C8D3DB /* ZWHelper-Info.plist */; };
+		E2DF8A2D20C770F200C8D3DB /* ZWHelper-Launchd.plist in Resources */ = {isa = PBXBuildFile; fileRef = E2DF8A2B20C770F200C8D3DB /* ZWHelper-Launchd.plist */; };
+		E2DF8A2E20C775CD00C8D3DB /* zhangwu.tech.ZWHelper in CopyFiles */ = {isa = PBXBuildFile; fileRef = E2DF8A1F20C76DDB00C8D3DB /* zhangwu.tech.ZWHelper */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		E20459C920C672E000998EAC /* PBXContainerItemProxy */ = {
+		E2DF8A2F20C775D600C8D3DB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E204596520C63ED000998EAC /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = E20459BD20C667F400998EAC;
-			remoteInfo = SMJobBlessHelper;
+			remoteGlobalIDString = E2DF8A1E20C76DDB00C8D3DB;
+			remoteInfo = ZWHelper;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -46,9 +46,18 @@
 			dstPath = Contents/Library/LaunchServices;
 			dstSubfolderSpec = 1;
 			files = (
-				E20459C720C668C600998EAC /* com.apple.bsd.SMJobBlessHelper in CopyFiles */,
+				E2DF8A2E20C775CD00C8D3DB /* zhangwu.tech.ZWHelper in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2DF8A1D20C76DDB00C8D3DB /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
@@ -61,13 +70,13 @@
 		E204597820C63ED000998EAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E204597920C63ED000998EAC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E204597B20C63ED000998EAC /* PPTP.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PPTP.entitlements; sourceTree = "<group>"; };
-		E204598520C6608500998EAC /* SMJobBlessHelper-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SMJobBlessHelper-Info.plist"; sourceTree = "<group>"; };
-		E204598720C6608600998EAC /* SMJobBlessHelper-Launchd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SMJobBlessHelper-Launchd.plist"; sourceTree = "<group>"; };
 		E204598B20C6609E00998EAC /* PPTP */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PPTP; sourceTree = "<group>"; };
 		E204598D20C6633D00998EAC /* PPTP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPTP.h; sourceTree = "<group>"; };
 		E204598E20C6633D00998EAC /* PPTP.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PPTP.m; sourceTree = "<group>"; };
-		E20459BE20C667F400998EAC /* com.apple.bsd.SMJobBlessHelper */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = com.apple.bsd.SMJobBlessHelper; sourceTree = BUILT_PRODUCTS_DIR; };
-		E20459C020C667F400998EAC /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		E2DF8A1F20C76DDB00C8D3DB /* zhangwu.tech.ZWHelper */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = zhangwu.tech.ZWHelper; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2DF8A2120C76DDB00C8D3DB /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		E2DF8A2A20C770F200C8D3DB /* ZWHelper-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ZWHelper-Info.plist"; sourceTree = "<group>"; };
+		E2DF8A2B20C770F200C8D3DB /* ZWHelper-Launchd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ZWHelper-Launchd.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +87,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E20459BB20C667F400998EAC /* Frameworks */ = {
+		E2DF8A1C20C76DDB00C8D3DB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -92,7 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				E204596F20C63ED000998EAC /* PPTP */,
-				E20459BF20C667F400998EAC /* SMJobBlessHelper */,
+				E2DF8A2020C76DDB00C8D3DB /* ZWHelper */,
 				E204596E20C63ED000998EAC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -101,7 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				E204596D20C63ED000998EAC /* PPTP.app */,
-				E20459BE20C667F400998EAC /* com.apple.bsd.SMJobBlessHelper */,
+				E2DF8A1F20C76DDB00C8D3DB /* zhangwu.tech.ZWHelper */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -131,14 +140,14 @@
 			path = peers;
 			sourceTree = "<group>";
 		};
-		E20459BF20C667F400998EAC /* SMJobBlessHelper */ = {
+		E2DF8A2020C76DDB00C8D3DB /* ZWHelper */ = {
 			isa = PBXGroup;
 			children = (
-				E204598520C6608500998EAC /* SMJobBlessHelper-Info.plist */,
-				E204598720C6608600998EAC /* SMJobBlessHelper-Launchd.plist */,
-				E20459C020C667F400998EAC /* main.c */,
+				E2DF8A2A20C770F200C8D3DB /* ZWHelper-Info.plist */,
+				E2DF8A2B20C770F200C8D3DB /* ZWHelper-Launchd.plist */,
+				E2DF8A2120C76DDB00C8D3DB /* main.c */,
 			);
-			path = SMJobBlessHelper;
+			path = ZWHelper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,27 +166,28 @@
 			buildRules = (
 			);
 			dependencies = (
-				E20459CA20C672E000998EAC /* PBXTargetDependency */,
+				E2DF8A3020C775D600C8D3DB /* PBXTargetDependency */,
 			);
 			name = PPTP;
 			productName = PPTP;
 			productReference = E204596D20C63ED000998EAC /* PPTP.app */;
 			productType = "com.apple.product-type.application";
 		};
-		E20459BD20C667F400998EAC /* SMJobBlessHelper */ = {
+		E2DF8A1E20C76DDB00C8D3DB /* ZWHelper */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E20459C220C667F400998EAC /* Build configuration list for PBXNativeTarget "SMJobBlessHelper" */;
+			buildConfigurationList = E2DF8A2520C76DDB00C8D3DB /* Build configuration list for PBXNativeTarget "ZWHelper" */;
 			buildPhases = (
-				E20459BA20C667F400998EAC /* Sources */,
-				E20459BB20C667F400998EAC /* Frameworks */,
+				E2DF8A1B20C76DDB00C8D3DB /* Sources */,
+				E2DF8A1C20C76DDB00C8D3DB /* Frameworks */,
+				E2DF8A1D20C76DDB00C8D3DB /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = SMJobBlessHelper;
-			productName = SMJobBlessHelper;
-			productReference = E20459BE20C667F400998EAC /* com.apple.bsd.SMJobBlessHelper */;
+			name = ZWHelper;
+			productName = ZWHelper;
+			productReference = E2DF8A1F20C76DDB00C8D3DB /* zhangwu.tech.ZWHelper */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -197,7 +207,7 @@
 							};
 						};
 					};
-					E20459BD20C667F400998EAC = {
+					E2DF8A1E20C76DDB00C8D3DB = {
 						CreatedOnToolsVersion = 9.4;
 					};
 				};
@@ -216,7 +226,7 @@
 			projectRoot = "";
 			targets = (
 				E204596C20C63ED000998EAC /* PPTP */,
-				E20459BD20C667F400998EAC /* SMJobBlessHelper */,
+				E2DF8A1E20C76DDB00C8D3DB /* ZWHelper */,
 			);
 		};
 /* End PBXProject section */
@@ -226,11 +236,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E204598A20C6608600998EAC /* SMJobBlessHelper-Launchd.plist in Resources */,
+				E2DF8A2D20C770F200C8D3DB /* ZWHelper-Launchd.plist in Resources */,
 				E204598C20C6609E00998EAC /* PPTP in Resources */,
 				E204597420C63ED000998EAC /* Assets.xcassets in Resources */,
 				E204597720C63ED000998EAC /* MainMenu.xib in Resources */,
-				E204598820C6608600998EAC /* SMJobBlessHelper-Info.plist in Resources */,
+				E2DF8A2C20C770F200C8D3DB /* ZWHelper-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,21 +257,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E20459BA20C667F400998EAC /* Sources */ = {
+		E2DF8A1B20C76DDB00C8D3DB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E20459C120C667F400998EAC /* main.c in Sources */,
+				E2DF8A2220C76DDB00C8D3DB /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		E20459CA20C672E000998EAC /* PBXTargetDependency */ = {
+		E2DF8A3020C775D600C8D3DB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = E20459BD20C667F400998EAC /* SMJobBlessHelper */;
-			targetProxy = E20459C920C672E000998EAC /* PBXContainerItemProxy */;
+			target = E2DF8A1E20C76DDB00C8D3DB /* ZWHelper */;
+			targetProxy = E2DF8A2F20C775D600C8D3DB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -420,43 +430,43 @@
 			};
 			name = Release;
 		};
-		E20459C320C667F400998EAC /* Debug */ = {
+		E2DF8A2320C76DDB00C8D3DB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8LP5KW6GHL;
-				INFOPLIST_FILE = "$(SRCROOT)/SMJobBlessHelper/SMJobBlessHelper-Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/ZWHelper/ZWHelper-Info.plist";
 				OTHER_LDFLAGS = (
 					"-sectcreate",
 					__TEXT,
 					__info_plist,
-					"SMJobBlessHelper/SMJobBlessHelper-Info.plist",
+					"ZWHelper/ZWHelper-Info.plist",
 					"-sectcreate",
 					__TEXT,
 					__launchd_plist,
-					"SMJobBlessHelper/SMJobBlessHelper-Launchd.plist",
+					"ZWHelper/ZWHelper-Launchd.plist",
 				);
-				PRODUCT_NAME = com.apple.bsd.SMJobBlessHelper;
+				PRODUCT_NAME = zhangwu.tech.ZWHelper;
 			};
 			name = Debug;
 		};
-		E20459C420C667F400998EAC /* Release */ = {
+		E2DF8A2420C76DDB00C8D3DB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8LP5KW6GHL;
-				INFOPLIST_FILE = "$(SRCROOT)/SMJobBlessHelper/SMJobBlessHelper-Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/ZWHelper/ZWHelper-Info.plist";
 				OTHER_LDFLAGS = (
 					"-sectcreate",
 					__TEXT,
 					__info_plist,
-					"SMJobBlessHelper/SMJobBlessHelper-Info.plist",
+					"ZWHelper/ZWHelper-Info.plist",
 					"-sectcreate",
 					__TEXT,
 					__launchd_plist,
-					"SMJobBlessHelper/SMJobBlessHelper-Launchd.plist",
+					"ZWHelper/ZWHelper-Launchd.plist",
 				);
-				PRODUCT_NAME = com.apple.bsd.SMJobBlessHelper;
+				PRODUCT_NAME = zhangwu.tech.ZWHelper;
 			};
 			name = Release;
 		};
@@ -481,11 +491,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E20459C220C667F400998EAC /* Build configuration list for PBXNativeTarget "SMJobBlessHelper" */ = {
+		E2DF8A2520C76DDB00C8D3DB /* Build configuration list for PBXNativeTarget "ZWHelper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E20459C320C667F400998EAC /* Debug */,
-				E20459C420C667F400998EAC /* Release */,
+				E2DF8A2320C76DDB00C8D3DB /* Debug */,
+				E2DF8A2420C76DDB00C8D3DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

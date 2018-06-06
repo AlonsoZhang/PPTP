@@ -7,7 +7,7 @@
 //
 
 #import "PPTP.h"
-#define XPCServer "com.apple.bsd.SMJobBlessHelper"
+#define XPCServer "zhangwu.tech.ZWHelper"
 
 @implementation PPTP
 
@@ -34,7 +34,6 @@
                                                 userInfo:nil repeats:YES];
 }
 
-
 -(void)DisConnect
 {
     [UpdataTime invalidate];
@@ -43,18 +42,14 @@
     [StatusItem setImage:[NSImage imageNamed:@"VPND"]];
 }
 
-
-
 -(void)RunXPC:(const char* )CMD
 {
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0),^{
         xpc_connection_t connection = xpc_connection_create_mach_service(XPCServer, NULL, XPC_CONNECTION_MACH_SERVICE_PRIVILEGED);
         if (!connection)
         {
             return;
         }
-        
         xpc_connection_set_event_handler(connection, ^(xpc_object_t event) {
             xpc_type_t type = xpc_get_type(event);
             
@@ -77,7 +72,6 @@
                 
             }
         });
-        
         xpc_connection_resume(connection);
         xpc_object_t message = xpc_dictionary_create(NULL, NULL, 0);
         xpc_dictionary_set_string(message, "request", CMD);
@@ -86,7 +80,6 @@
             const char* response = xpc_dictionary_get_string(event, "reply");
             NSLog(@"%s",response);
         });
-        
     });
 }
 

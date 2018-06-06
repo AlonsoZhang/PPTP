@@ -1,8 +1,8 @@
 //
 //  main.c
-//  SMJobBlessHelper
+//  ZWHelper
 //
-//  Created by Alonso on 2018/6/5.
+//  Created by Alonso on 2018/6/6.
 //  Copyright © 2018 Alonso. All rights reserved.
 //
 
@@ -67,7 +67,7 @@ static void __XPC_Connection_Handler(xpc_connection_t connection)  {
 }
 
 int main(int argc, const char *argv[]) {
-    xpc_connection_t service = xpc_connection_create_mach_service("com.apple.bsd.SMJobBlessHelper",
+    xpc_connection_t service = xpc_connection_create_mach_service("zhangwu.tech.ZWHelper",
                                                                   dispatch_get_main_queue(),
                                                                   XPC_CONNECTION_MACH_SERVICE_LISTENER);
     

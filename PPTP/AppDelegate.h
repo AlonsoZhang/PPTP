@@ -15,7 +15,6 @@
 }
 
 @property(readwrite, retain) NSStatusItem *StatusItem;
-
 @end
 
 //参考文章https://blog.csdn.net/suhuaiqiang_janlay/article/details/71374287

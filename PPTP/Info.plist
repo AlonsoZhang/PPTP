@@ -32,8 +32,8 @@
 	<string>NSApplication</string>
 	<key>SMPrivilegedExecutables</key>
 	<dict>
-		<key>com.apple.bsd.SMJobBlessHelper</key>
-		<string>identifier com.apple.bsd.SMJobBlessHelper and certificate leaf[subject.CN] = &quot;Mac Developer: zwddhp@gmail.com (H5RU53JYFU)&quot;</string>
+		<key>zhangwu.tech.ZWHelper</key>
+		<string>identifier zhangwu.tech.ZWHelper and certificate leaf[subject.CN] = &quot;Mac Developer: zwddhp@gmail.com (H5RU53JYFU)&quot;</string>
 	</dict>
 </dict>
 </plist>
